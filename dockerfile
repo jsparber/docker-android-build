@@ -8,8 +8,5 @@ RUN adduser builder
 ENV HOME /home/builder
 RUN chown builder:users -R /home/builder/
 USER builder
+WORKDIR $HOME
 ENTRYPOINT ["/bin/bash"]
-
-
-
-
